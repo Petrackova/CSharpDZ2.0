@@ -14,7 +14,7 @@ int n = Convert.ToInt32(Console.ReadLine());
 int[,] arr = FindArr(m,n);
 PrintArray(arr);
 System.Console.WriteLine();
-int[,] a = FindSumm(arr);
+int[,] a = Reversi(arr);
 PrintArray(arr);
 
 int[,] FindArr(int a, int b)
@@ -42,7 +42,7 @@ void PrintArray(int[,] arr)
     }
 }
 
-int[,] FindSumm(int[,] arr)
+int[,] Reversi(int[,] arr)
 {   
     int temp;
     for ( int i = 0; i < arr.GetLength(0); i++) 
